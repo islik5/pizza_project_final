@@ -8,56 +8,125 @@
 
 
     <LinearLayout
+        android:id="@+id/Linear1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal|top"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView5"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="MELNICA"
-            android:textSize="60dp"
-            android:textAlignment="center"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/basicButtons"/>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="Адрес:ул.Батырая  "
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="Номер: 8922 285 26 61"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="Инста:melnica_dostavka"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="Вацап:8922 285 26 61"
-            android:textSize="30dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Жалоба"
-            app:backgroundTint="@color/basicButtons" />
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/LogoRound"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo_round" />
+
+        <TextView
+            android:id="@+id/textFirma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Пиццерия \n «Мельница»"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAdresTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Адрес"/>
+
+        <TextView
+            android:id="@+id/textAdres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Улица Батырая,\n тупик 7, дом 2"/>
+
+        <TextView
+            android:id="@+id/dvaGIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:autoLink="web"
+            android:text="https://go.2gis.com/vbziz2"/>
+
+        <TextView
+            android:id="@+id/textNomerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Номер"/>
+
+        <TextView
+            android:id="@+id/textNomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="+7(922) 285-26-61"/>
+
+        <TextView
+            android:id="@+id/textInstaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Инстаграм"/>
+
+        <TextView
+            android:id="@+id/textInstaLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:autoLink="web"
+            android:text="https://www.instagram.com/melnica_dostavka"/>
+        <TextView
+            android:id="@+id/textWhatsappTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Ватсап"/>
+
+        <TextView
+            android:id="@+id/textWhatsappLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:autoLink="web"
+            android:text="https://api.whatsapp.com/send?phone=79222852661"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 

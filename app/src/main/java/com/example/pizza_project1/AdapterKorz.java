@@ -90,6 +90,11 @@ public class AdapterKorz extends RecyclerView.Adapter<AdapterKorz.UserViewHolder
                 onClickListenerminus.onUserClickminus(user, position);
                 holder.pizzakol -=1;
                 holder.kolvo.setText(holder.pizzakol + "");
+
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference reference = database.getReference("Korz");
+
+                if (holder.pizzakol < 1){reference.child(user.lastName).removeValue();}
             }
         });
 

@@ -59,7 +59,7 @@ public class Menu extends Fragment {
         adapter = new PizzaAdapter(getActivity(),result, new PizzaAdapter.OnUserClickListener() {
             @Override
             public void onUserClick(PizzaModel pizzaModel, int position) {
-                Toast.makeText(getActivity(), "Пицца "+ pizzaModel.getFirstName()+" добавлена  в корзину",
+                Toast.makeText(getActivity(), "Пицца "+ pizzaModel.getLastName()+" добавлена  в корзину",
                         Toast.LENGTH_SHORT).show();
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference reference = database.getReference("Korz");
